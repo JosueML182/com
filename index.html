@@ -80,8 +80,9 @@
             margin-top: 5px;
             color: red;
         }
-           /* Ajustes para pantallas pequeñas */
-           @media (max-width: 600px) {
+           
+        /* Ajustes para pantallas pequeñas de Android */
+        @media (max-width: 600px) {
             .header-text h1 {
                 font-size: 1rem;
             }
@@ -96,6 +97,35 @@
             }
         }
 
+        /* Ajustes para pantallas más grandes de Android */
+        @media (min-width: 600px) and (max-width: 720px) {
+            .header img {
+                height: 70px;
+            }
+
+            .header-text h1 {
+                font-size: 1.1rem;
+            }
+
+            .header-text p {
+                font-size: 0.85rem;
+            }
+        }
+
+        /* Ajustes para pantallas con más resolución */
+        @media (min-width: 720px) and (max-width: 1080px) {
+            .header img {
+                height: 90px;
+            }
+
+            .header-text h1 {
+                font-size: 1.3rem;
+            }
+
+            .header-text p {
+                font-size: 1rem;
+            }
+        }
         /* Franja gris delgada con desvanecido */
         .divider {
             width: 100%;
